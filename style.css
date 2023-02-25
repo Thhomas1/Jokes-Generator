@@ -19,7 +19,7 @@ body{
 h1 {
     margin-top: 0;
     font-size: 28px;
-    color: antiquewhite;
+    color: rgba(20, 34, 20, 0.8);
 }
 
 .joke-box{
@@ -38,7 +38,7 @@ h1 {
 
 .new-joke-btn {
     padding: 12px 24px;
-    background-color: #51b360;
+    background-color: #2b5832;
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -47,10 +47,42 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.new-joke-btn::after{
-    cursor: pointer;
+.new-joke-btn:hover {
+    background-color: #b7d6ab;
+    color: #040404;
+    box-shadow: none;
 }
 
+.category-form{
+    margin-bottom: 24px;
+}
 
+label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #565656;
+}
 
-/* 3.35 only css  */
+select, button[type="submit"]{
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    margin-right: 14px;
+    background-color: rgba(181, 214, 181, 0.8);
+    color: rgb(50, 58, 43);
+}
+select{
+ margin-right: 14px;
+}
+
+button[type="submit"] {
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c8c8c8;
+    color: black;
+    box-shadow: none;
+}

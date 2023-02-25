@@ -21,7 +21,7 @@ function fetchJoke(category = ""){
 
 function fetchCategories() {
     fetch("https://api.chucknorris.io/jokes/categories")
-    .then(response => responsese.json())
+    .then(response => response.json())
     .then(data => {
         data.forEach(category => {
             const option = document.createElement("option");
